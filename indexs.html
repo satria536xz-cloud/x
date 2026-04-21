@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Nusantara - Rasa Asli Indonesia</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">☕ Kopi Nusantara</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <a href="#kontak" class="cta-button">Pesan Sekarang</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Rasa Asli Indonesia</h1>
+            <p>Nikmati kopi terbaik dari perkebunan Nusantara langsung ke tangan Anda</p>
+            <a href="#produk" class="cta-button">Lihat Produk</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="tentang" class="features">
+        <div class="container">
+            <h2>Mengapa Memilih Kami?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Biji Kopi Segar</h3>
+                    <p>Panen langsung dari petani lokal dengan kualitas terbaik</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Pengiriman Cepat</h3>
+                    <p>Gratis ongkir untuk pembelian di atas Rp 200.000</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Jaminan Kualitas</h3>
+                    <p>Uang kembali 100% jika tidak sesuai ekspektasi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="produk">
+        <div class="container">
+            <h2>Produk Unggulan</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'><rect fill='%23D2B48C' width='300' height='200' rx='10'/><circle fill='%238B4513' cx='80' cy='60' r='30'/><circle fill='%23D2691E' cx='220' cy='80' r='25'/><rect fill='%23A0522D' x='120' y='120' width='60' height='60' rx='8'/></svg>" alt="Kopi Arabika">
+                    <div class="product-info">
+                        <h3>Kopi Arabika Premium</h3>
+                        <p class="product-price">Rp 85.000 / 250gr</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'><rect fill='%23DEB887' width='300' height='200' rx='10'/><circle fill='%238B4513' cx='100' cy='70' r='35'/><circle fill='%23CD853F' cx='200' cy='90' r='30'/><rect fill='%23A0522D' x='140' y='130' width='50' height='50' rx='6'/></svg>" alt="Kopi Robusta">
+                    <div class="product-info">
+                        <h3>Kopi Robusta Gayo</h3>
+                        <p class="product-price">Rp 75.000 / 250gr</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'><rect fill='%23F4A460' width='300' height='200' rx='10'/><circle fill='%238B4513' cx='90' cy='50' r='28'/><circle fill='%23D2691E' cx='210' cy='70' r='32'/><rect fill='%23BC8F8F' x='110' y='110' width='70' height='60' rx='10'/></svg>" alt="Kopi Luwak">
+                    <div class="product-info">
+                        <h3>Kopi Luwak Asli</h3>
+                        <p class="product-price">Rp 250.000 / 100gr</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2>Pesan Sekarang</h2>
+            <p>Dapatkan penawaran spesial untuk pembelian pertama!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="No. WhatsApp" required>
+                <textarea rows="4" placeholder="Pesan Anda"></textarea>
+                <button type="submit">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kopi Nusantara. Semua hak dilindungi. Made with ❤️ untuk pecinta kopi Indonesia.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim. Kami akan menghubungi segera.');
+            this.reset();
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(139, 69, 19, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #8B4513 0%, #D2691E 100%)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
